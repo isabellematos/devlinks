@@ -1,0 +1,64 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px;
+  text-align: center;
+}
+
+.profile__avatar-slot {
+  position: relative;
+  height: 112px;
+  width: 112px;
+  flex-shrink: 0;
+}
+
+.profile__avatar {
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+/* Óculos escuros — animação de queda no tema claro */
+.profile__sunglasses {
+  position: absolute;
+  width: 58%;
+  left: 50%;
+  top: 22%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  animation: sunglasses-drop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes sunglasses-drop {
+  0% {
+    top: -40%;
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 22%;
+    opacity: 1;
+  }
+}
+
+/* Respeita preferência de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  .profile__sunglasses {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+.profile__username {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  overflow-wrap: anywhere;
+}
