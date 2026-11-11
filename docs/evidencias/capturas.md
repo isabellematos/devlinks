@@ -1,6 +1,5 @@
 # Capturas da versão personalizada
 
-Capturas feitas manualmente por Isabelle no navegador em 10/11/2026, com o app rodando em `npm run dev`. Não foram geradas por Playwright.
 
 | Tela | Tema escuro | Tema claro |
 |---|---|---|
