@@ -50,7 +50,7 @@ Os registros de cada etapa ficam em [docs/evidencias](docs/evidencias). Eles rep
 
 - [Capturas desktop e celular](docs/evidencias/capturas.md)
 - [Evidência Context7 MCP](docs/evidencias/context7.md)
-- [Evidência Playwright MCP](docs/evidencias/playwright-mcp.md) (precisa ser refeita na versão personalizada)
+- [Evidência Playwright MCP](docs/evidencias/playwright-mcp.md)
 
 ![Desktop escuro](docs/evidencias/desktop-escuro.png)
 ![Celular claro](docs/evidencias/celular-claro.png)
